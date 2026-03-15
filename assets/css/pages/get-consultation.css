@@ -1,0 +1,124 @@
+/* =====================================
+HOW IT WORKS SECTION
+===================================== */
+
+.how-section {
+    background: linear-gradient(135deg, var(--bg-color), var(--white));
+}
+
+/* Section Heading */
+.how-section h2 {
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.how-section h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: var(--accent-warning);
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--radius-sm);
+}
+
+/* Each Step Card */
+.how-step {
+    background: var(--white);
+    padding: 30px 20px;
+    border-radius: var(--radius-xl);
+    transition: var(--transition-fast);
+    box-shadow: var(--shadow-soft);
+    height: 100%;
+}
+
+/* Hover Effect */
+.how-step:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Icons */
+.how-step i {
+    font-size: 40px;
+    color: var(--accent-warning);
+    margin-bottom: 15px;
+    transition: var(--transition-fast);
+}
+
+/* Icon Hover */
+.how-step:hover i {
+    transform: scale(1.1);
+    color: var(--black);
+}
+
+/* Step Title */
+.how-step h5 {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+    .how-step {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* =====================================
+CONSULTATION FORM CARD
+===================================== */
+
+.consultation-card {
+    border-radius: var(--radius-xl);
+    transition: var(--transition-fast);
+}
+
+/* Card Hover Effect */
+.consultation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Form Inputs Focus Effect */
+.consultation-card .form-control,
+.consultation-card .form-select {
+    border-radius: var(--radius-md);
+    padding: 12px;
+    transition: var(--transition-fast);
+}
+
+.consultation-card .form-control:focus,
+.consultation-card .form-select:focus {
+    border-color: var(--accent-warning);
+    box-shadow: var(--focus-warning);
+}
+
+/* Submit Button Animation */
+.consultation-card .btn {
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: var(--transition-fast);
+}
+
+.consultation-card .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-btn-hover);
+}
+
+/* Success Alert Styling */
+#formSuccess {
+    border-radius: var(--radius-md);
+    font-weight: 500;
+}
+
+
+/* =====================================
+FAQ SECTION
+===================================== */
+
+.faq-section {
+    background: linear-gradient(135deg, var(--bg-color), var(--white));
+}

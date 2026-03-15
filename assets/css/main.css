@@ -1,0 +1,65 @@
+/* =====================================================
+ConsultPro - Main CSS Import File
+Combines all base, components, layout, sections & utilities
+===================================================== */
+
+/* =================================
+BASE STYLES
+================================= */
+@import url("base/reset.css");
+@import url("base/variables.css");
+
+/* =================================
+COMPONENTS
+================================= */
+@import url("components/buttons.css");
+/* @import url("components/cards.css"); */
+@import url("components/floating.css");
+@import url("components/preloader.css");
+@import url("components/process.css");
+
+/* =================================
+LAYOUT
+================================= */
+@import url("layout/header.css");
+@import url("layout/footer.css");
+
+/* =================================
+SECTIONS
+================================= */
+@import url("sections/hero.css");
+@import url("sections/about.css");
+@import url("sections/services.css");
+@import url("sections/team.css");
+@import url("sections/testimonials.css");
+@import url("sections/blog.css");
+@import url("sections/clients.css");
+@import url("sections/cta.css");
+@import url("sections/contact.css");
+@import url("sections/faq.css");
+
+/* =================================
+PAGES
+================================= */
+@import url("pages/about.css");
+@import url("pages/services.css");
+@import url("pages/insights.css");
+@import url("pages/contact.css");
+@import url("pages/get-consultation.css");
+
+/* =================================
+UTILITIES
+================================= */
+@import url("utilities/animations.css");
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,180 @@
+/* =====================================================
+ConsultPro - Global Variables
+Design tokens used across the entire website
+===================================================== */
+
+:root {
+
+    /* =====================================
+    COLOR SYSTEM
+    ===================================== */
+
+    --primary-color: #ff9900;
+    --secondary-color: #003366;
+
+    --accent-gold: #f7b500;
+    --accent-warning: #ffc107;
+
+    --accent-blue: #2563EB;
+    --accent-blue-dark: #1E40AF;
+
+    --success-color: #16a34a;
+
+    --white: #ffffff;
+    --black: #000000;
+
+    --primary-soft: rgba(255,153,0,0.1);
+    --accent-blue-soft: rgba(37,99,235,0.1);
+
+    /* =====================================
+    TEXT SYSTEM
+    ===================================== */
+
+    --text-color: #333333;
+    --text-heading: #0f172a;
+    --text-light: #555;
+    --text-soft: #6B7280;
+    --text-muted: #777;
+
+    /* =====================================
+    BACKGROUNDS
+    ===================================== */
+
+    --bg-color: #f8f9fa;
+    --bg-light: #F8FAFC;
+    --bg-soft: #EEF2F7;
+
+    --mobile-menu-bg: rgba(255,255,255,0.95);
+    --social-icon-bg: rgba(255,255,255,0.1);
+    --glass-bg: rgba(255,255,255,0.1);
+
+    /* =====================================
+    TYPOGRAPHY
+    ===================================== */
+
+    --font-primary: 'Poppins', sans-serif;
+
+    /* =====================================
+    SPACING SYSTEM
+    ===================================== */
+
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+
+    /* =====================================
+    BORDER SYSTEM
+    ===================================== */
+
+    --border-light: rgba(0,0,0,0.05);
+    --border-soft: #e5e5e5;
+    --footer-border: rgba(255,255,255,0.1);
+
+    /* =====================================
+    BORDER RADIUS
+    ===================================== */
+
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-pill: 50px;
+
+    /* =====================================
+    SHADOW SYSTEM
+    ===================================== */
+
+    --shadow-sm: 0 5px 15px rgba(0,0,0,0.08);
+    --shadow-md: 0 10px 30px rgba(0,0,0,0.08);
+    --shadow-lg: 0 20px 40px rgba(0,0,0,0.10);
+    --shadow-xl: 0 25px 50px rgba(0,0,0,0.15);
+
+    --shadow-soft: 0 5px 20px rgba(0,0,0,0.05);
+    --shadow-hover: 0 15px 35px rgba(0,0,0,0.1);
+    --shadow-premium: 0 25px 60px rgba(0,0,0,0.12);
+
+    --navbar-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    --mobile-menu-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    --scroll-btn-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+    --shadow-text-hero: 0 4px 20px rgba(0,0,0,0.35);
+
+    /* =====================================
+    GRADIENTS
+    ===================================== */
+
+    --gradient-dark-start: rgba(15,32,39,0.05);
+    --gradient-dark-end: rgba(44,83,100,0.05);
+
+    --gradient-accent: linear-gradient(
+        135deg,
+        var(--primary-color),
+        #ffb347
+    );
+
+    --gradient-cta: linear-gradient(
+        135deg,
+        #ff7e5f,
+        #feb47b,
+        #ff7e5f,
+        #ffb347
+    );
+
+    --gradient-hero: linear-gradient(
+        -45deg,
+        #0f2027,
+        #203a43,
+        #2c5364,
+        #1c92d2
+    );
+
+    /* =====================================
+    HERO TOKENS
+    ===================================== */
+
+    --hero-shape-bg: rgba(255,255,255,0.18);
+
+    /* =====================================
+    FORM TOKENS
+    ===================================== */
+
+    --input-border: #dddddd;
+    --input-focus-ring: 0 0 0 0.2rem rgba(255,153,0,0.15);
+
+    --focus-warning: 0 0 0 0.2rem rgba(255,193,7,0.25);
+    --focus-blue: 0 0 0 3px rgba(37,99,235,0.15);
+
+    /* =====================================
+    BUTTON TOKENS
+    ===================================== */
+
+    --btn-hover-color: #ffcc66;
+
+    --shadow-btn-soft: 0 5px 15px rgba(255,255,255,0.2);
+
+    --shadow-btn-glow:
+        0 0 20px rgba(255,235,59,0.7),
+        0 8px 25px rgba(0,0,0,0.25);
+
+    /* =====================================
+    COMPONENT COLORS
+    ===================================== */
+
+    --star-color: #ffc107;
+
+    /* =====================================
+    OPACITY
+    ===================================== */
+
+    --footer-text-opacity: 0.85;
+    --footer-bottom-opacity: 0.8;
+
+    /* =====================================
+    TRANSITIONS
+    ===================================== */
+
+    --transition-fast: 0.3s ease;
+    --transition-normal: all 0.35s ease;
+    --transition-medium: all 0.35s ease;
+
+}

@@ -1,0 +1,154 @@
+/* =====================================
+PROCESS SECTION
+===================================== */
+
+.process-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg,
+            var(--gradient-dark-start),
+            var(--gradient-dark-end));
+}
+
+/* Section Header */
+
+.process-section h2 {
+    text-align: center;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.process-section p {
+    text-align: center;
+    margin-bottom: 3rem;
+    opacity: 0.8;
+}
+
+/* Process Step Card */
+
+.process-step {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: var(--radius-md);
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Gradient Overlay */
+
+.process-step::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg,
+            var(--primary-color),
+            #ffb347,
+            #1c92d2);
+    opacity: 0.05;
+    transform: rotate(25deg);
+    transition: 0.5s ease;
+    z-index: 0;
+}
+
+.process-step:hover::before {
+    opacity: 0.12;
+}
+
+/* Step Number Circle */
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background: var(--gradient-accent);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-normal);
+    z-index: 1;
+    box-shadow: var(--shadow-sm);
+}
+
+.process-step:hover .step-number {
+    transform: scale(1.25) rotate(5deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Step Title & Description */
+
+.process-step h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+    position: relative;
+    z-index: 1;
+}
+
+.process-step p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hover Animation */
+
+.process-step:hover {
+    transform: translateY(-12px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Responsive Styles */
+
+@media (max-width: 991px) {
+
+    .process-step {
+        padding: 25px 15px;
+    }
+
+    .step-number {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .process-step h4 {
+        font-size: 18px;
+    }
+
+    .process-step p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .step-number {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .process-step h4 {
+        font-size: 16px;
+    }
+
+    .process-step p {
+        font-size: 12px;
+    }
+}

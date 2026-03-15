@@ -1,0 +1,124 @@
+/* =================================
+CTA SECTION STYLING
+================================= */
+
+.cta-section {
+    position: relative;
+    margin: 60px auto;
+    max-width: 1100px;
+    padding: 60px 30px;
+    text-align: center;
+    color: var(--white);
+    border-radius: var(--radius-xl);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-premium);
+
+    /* Animated gradient background */
+    background: var(--gradient-cta);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+.cta-section h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 1.125rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.cta-section .btn {
+    font-size: 1.125rem;
+    padding: 12px 30px;
+    border-radius: var(--radius-pill);
+    transition: var(--transition-normal);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    animation: pulseBtn 2.5s infinite;
+
+    box-shadow: var(--shadow-btn-soft);
+}
+
+/* Hover effect */
+
+.cta-section .btn:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: var(--shadow-btn-glow);
+    text-decoration: none;
+}
+
+
+/* ==============================
+ANIMATIONS
+============================== */
+
+@keyframes gradientShift {
+
+    0% { background-position: 0% 50%; }
+
+    50% { background-position: 100% 50%; }
+
+    100% { background-position: 0% 50%; }
+
+}
+
+@keyframes pulseBtn {
+
+    0%,100% { transform: scale(1); }
+
+    50% { transform: scale(1.05); }
+
+}
+
+
+/* ==============================
+RESPONSIVE
+============================== */
+
+@media (max-width: 992px) {
+
+    .cta-section {
+        padding: 50px 20px;
+    }
+
+    .cta-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .cta-section p {
+        font-size: 1rem;
+    }
+
+    .cta-section .btn {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .cta-section {
+        padding: 40px 15px;
+    }
+
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-section p {
+        font-size: 0.95rem;
+    }
+
+    .cta-section .btn {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 1rem;
+    }
+
+}

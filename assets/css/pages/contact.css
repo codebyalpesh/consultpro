@@ -1,0 +1,121 @@
+/* =====================================================
+CONTACT PAGE STYLES
+===================================================== */
+
+
+/* =====================================================
+CONTACT INFO SECTION
+===================================================== */
+
+.contact-info-section {
+    background-color: var(--bg-color);
+    padding: 4rem 0;
+}
+
+/* Info Card */
+.contact-info-item {
+    background: var(--white);
+    padding: 2rem 1.5rem;
+    border-radius: var(--radius-md);
+    height: 100%;
+    transition: var(--transition-fast);
+}
+
+/* Hover Effect */
+.contact-info-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Icon */
+.contact-info-item i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Title */
+.contact-info-item h6 {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Text */
+.contact-info-item p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+
+/* =====================================================
+CONTACT FORM SECTION
+===================================================== */
+
+.contact-section {
+    background-color: var(--bg-color);
+    padding: 5rem 0;
+}
+
+/* Form Card */
+.contact-form {
+    border-radius: var(--radius-md);
+    transition: var(--transition-fast);
+}
+
+/* Form Card Hover */
+.contact-form:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+/* Section Heading */
+.contact-section h2 {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+
+/* =====================================================
+FORM ELEMENTS
+===================================================== */
+
+/* Labels */
+.contact-form .form-label {
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+/* Inputs & Textarea */
+.contact-form .form-control {
+    border: 1px solid var(--input-border);
+    border-radius: var(--radius-sm);
+    padding: 0.75rem 1rem;
+    transition: var(--transition-fast);
+}
+
+/* Focus State */
+.contact-form .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: var(--input-focus-ring);
+}
+
+
+/* =====================================================
+SUBMIT BUTTON
+===================================================== */
+
+.contact-form .btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: var(--radius-md);
+    transition: var(--transition-fast);
+}
+
+/* Button Hover */
+.contact-form .btn:hover {
+    background-color: var(--btn-hover-color);
+    color: var(--secondary-color);
+}

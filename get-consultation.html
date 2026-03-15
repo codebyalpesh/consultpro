@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ===== META ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Consultation | ConsultPro</title>
+    <meta name="description"
+        content="Schedule a consultation with ConsultPro experts to get tailored business strategies and guidance.">
+
+    <!-- ===== FAVICON ===== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ===== CSS FRAMEWORK ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ===== ICONS ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- ===== MAIN CSS ===== -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- ================================= -->
+    <!-- PRELOADER -->
+    <!-- ================================= -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- ================================= -->
+    <!-- ===== NAVBAR ===== -->
+    <!-- ================================= -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-section">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">ConsultPro</a>
+
+            <!-- Toggler button -->
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navbar menu -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="get-consultation.html" class="btn btn-warning ms-3">Get Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================================= -->
+    <!-- ===== HERO SECTION ===== -->
+    <!-- ================================= -->
+    <section class="hero-section text-center reveal">
+        <div class="container">
+            <h1 class="display-4">Schedule a Consultation</h1>
+            <p class="lead">Connect with our experts and get personalized guidance to grow your business.</p>
+        </div>
+    </section>
+
+    <!-- ================================= -->
+    <!-- HOW IT WORKS -->
+    <!-- ================================= -->
+    <section class="how-section py-5 reveal bg-light">
+        <div class="container text-center">
+
+            <h2 class="mb-5 fw-bold">How It Works</h2>
+
+            <div class="row g-4">
+
+                <!-- Step 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="how-step">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <h5>Fill Form</h5>
+                        <p class="small text-muted mt-2">
+                            Share your details and select the service you need.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="how-step">
+                        <i class="fa-solid fa-user-check"></i>
+                        <h5>Expert Review</h5>
+                        <p class="small text-muted mt-2">
+                            Our consultants review your request carefully.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="how-step">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <h5>Schedule Call</h5>
+                        <p class="small text-muted mt-2">
+                            We confirm a meeting time that suits you.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="how-step">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h5>Get Strategy</h5>
+                        <p class="small text-muted mt-2">
+                            Receive personalized guidance and actionable strategy.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================================= -->
+    <!-- ===== CONSULTATION FORM SECTION ===== -->
+    <!-- ================================= -->
+    <section class="py-5 reveal">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-lg border-0 p-4 consultation-card">
+                        <h2 class="text-center mb-4">Book Your Consultation</h2>
+
+                        <div id="formSuccess" class="alert alert-success d-none">
+                            Your request has been submitted successfully. We will contact you soon.
+                        </div>
+
+                        <form id="consultForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Full Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Company Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select" required>
+                                    <option value="" disabled selected>Select Service</option>
+                                    <option>Business Strategy</option>
+                                    <option>Market Analysis</option>
+                                    <option>Financial Planning</option>
+                                    <option>Startup Consulting</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select" required>
+                                    <option value="" disabled selected>Preferred Meeting Type</option>
+                                    <option>Phone Call</option>
+                                    <option>Video Meeting</option>
+                                    <option>In Person</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="time" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Additional Details"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning btn-lg w-100">Request Consultation</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================= -->
+    <!-- ===== FAQ ===== -->
+    <!-- ================================= -->
+    <section class="faq-section py-5 reveal">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="faq-wrapper">
+
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        How soon will I get a response?
+                        <span class="faq-icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Within 24 hours after submission.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================= -->
+    <!-- ===== CTA SECTION ===== -->
+    <!-- ================================= -->
+    <section class="cta-section py-5 text-center reveal">
+        <div class="container">
+            <h2>Have Questions?</h2>
+            <p>Our consultants are ready to provide the insights and solutions you need.</p>
+            <a href="contact.html" class="btn btn-warning btn-lg">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- ================================= -->
+    <!-- PREMIUM FOOTER -->
+    <!-- ================================= -->
+
+    <footer class="footer-section py-5 reveal">
+
+        <div class="container">
+
+            <div class="row g-4 g-md-5">
+
+                <!-- COMPANY INFO -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">ConsultPro</h5>
+                    <p class="footer-text">
+                        Professional consulting services helping businesses grow
+                        through strategy, market insights, and innovation.
+                    </p>
+
+                    <!-- Social Icons -->
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- SERVICES LINKS -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Services</h5>
+                    <div class="footer-links">
+                        <a href="business-strategy.html">Business Strategy</a>
+                        <a href="market-analysis.html">Market Analysis</a>
+                        <a href="financial-planning.html">Financial Planning</a>
+                        <a href="startup-consulting.html">Startup Consulting</a>
+                    </div>
+                </div>
+
+                <!-- COMPANY LINKS -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Company</h5>
+                    <div class="footer-links">
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="insights.html">Insights</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <!-- NEWSLETTER -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Newsletter</h5>
+                    <p class="footer-text">
+                        Subscribe to receive business insights and updates.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- FOOTER BOTTOM -->
+            <div class="footer-bottom text-center">
+                <p>© 2026 ConsultPro. All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP -->
+
+    <button id="scrollTopBtn">
+
+        <svg width="48" height="48">
+
+            <circle cx="24" cy="24" r="20" stroke-width="3" fill="none" class="progress-circle" />
+
+        </svg>
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/911234567890" target="_blank" class="whatsapp-float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+/* =====================================================
+ConsultPro - Base Styles
+Reset + Global Element Styling
+===================================================== */
+
+/* =====================================
+CSS RESET
+===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =====================================
+BODY
+===================================== */
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+/* =====================================
+HEADINGS
+===================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+/* =====================================
+PARAGRAPHS
+===================================== */
+p {
+    margin-bottom: var(--spacing-md);
+}
+
+/* =====================================
+LINKS
+===================================== */
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+/* =====================================
+IMAGES
+===================================== */
+img {
+    max-width: 100%;
+    height: auto;
+}

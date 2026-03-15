@@ -1,0 +1,323 @@
+/* =====================================================
+1. INSIGHTS STATS SECTION
+===================================================== */
+
+.insights-stats {
+    background: var(--bg-color);
+}
+
+.insights-stats .col-md-4 {
+    position: relative;
+}
+
+.insights-stats h3 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--accent-gold);
+    margin-bottom: 10px;
+}
+
+.insights-stats p {
+    font-size: 16px;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.insights-stats .col-md-4:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 60px;
+    background: var(--border-soft);
+}
+
+
+/* =====================================================
+2. TRENDING INSIGHTS SECTION
+===================================================== */
+
+.trending-insights {
+    background: var(--white);
+}
+
+.trending-insights h2 {
+    font-weight: 600;
+}
+
+.trending-insights p {
+    color: var(--text-muted);
+}
+
+.trending-insights .row {
+    align-items: stretch;
+}
+
+/* Card */
+.trending-card {
+    position: relative;
+    background: var(--bg-color);
+    transition: var(--transition-fast);
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    background: var(--white);
+}
+
+/* Accent */
+.trending-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent-gold);
+    transform: scaleY(0);
+    transition: var(--transition-fast);
+}
+
+.trending-card:hover::before {
+    transform: scaleY(1);
+}
+
+.trend-number {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 50px;
+    font-weight: 700;
+    opacity: 0.07;
+    pointer-events: none;
+}
+
+.trending-card h6 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.trending-card p {
+    font-size: 14px;
+    color: var(--text-muted);
+    flex-grow: 1;
+}
+
+.trending-card a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--accent-gold);
+    transition: var(--transition-fast);
+}
+
+.trending-card a:hover {
+    color: var(--black);
+}
+
+
+/* =====================================================
+3. BLOG SECTION
+===================================================== */
+
+.blog {
+    background: var(--bg-light);
+}
+
+.blog .row {
+    align-items: stretch;
+}
+
+.blog-card {
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    transition: var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-premium);
+}
+
+.blog-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.blog-card:hover img {
+    transform: scale(1.1);
+}
+
+.blog-category {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--accent-blue);
+    color: var(--white);
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+}
+
+.blog-content {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.blog-meta {
+    font-size: 13px;
+    color: var(--text-soft);
+    margin-bottom: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.blog-meta i {
+    margin-right: 5px;
+    color: var(--accent-blue);
+}
+
+.blog-content h5 {
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-heading);
+}
+
+.blog-content p {
+    font-size: 14px;
+    color: var(--text-soft);
+    flex-grow: 1;
+}
+
+.read-more {
+    font-weight: 600;
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.read-more:hover {
+    color: var(--accent-blue-dark);
+}
+
+
+/* =====================================================
+4. EXPLORE TOPICS
+===================================================== */
+
+.insight-topics {
+    background: var(--bg-soft);
+}
+
+.topic-card {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: 35px 20px;
+    transition: var(--transition-normal);
+    cursor: pointer;
+    height: 100%;
+}
+
+.topic-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: var(--shadow-premium);
+}
+
+.topic-card i {
+    font-size: 28px;
+    color: var(--accent-blue);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background: var(--accent-blue-soft);
+    margin: 0 auto 15px;
+    transition: var(--transition-normal);
+}
+
+.topic-card:hover i {
+    background: var(--white);
+    transform: rotate(10deg) scale(1.1);
+}
+
+.topic-card h6 {
+    font-weight: 600;
+    margin: 0;
+}
+
+
+/* =====================================================
+5. NEWSLETTER CTA
+===================================================== */
+
+.newsletter-cta {
+    background: var(--bg-light);
+}
+
+.newsletter-cta h2 {
+    font-weight: 700;
+    color: var(--text-heading);
+}
+
+.newsletter-cta p {
+    color: var(--text-soft);
+    margin-bottom: 25px;
+}
+
+.newsletter-main-form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.newsletter-main-form input {
+    width: 320px;
+    max-width: 100%;
+    padding: 14px 18px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-light);
+    transition: var(--transition-fast);
+}
+
+.newsletter-main-form input:focus {
+    border-color: var(--accent-blue);
+    box-shadow: var(--focus-blue);
+}
+
+.newsletter-main-form button {
+    border-radius: var(--radius-pill);
+    padding: 14px 26px;
+    font-weight: 600;
+    background: var(--accent-blue);
+    border: none;
+    color: var(--white);
+    transition: var(--transition-fast);
+}
+
+.newsletter-main-form button:hover {
+    background: var(--accent-blue-dark);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-btn-hover);
+}

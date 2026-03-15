@@ -1,0 +1,471 @@
+/* =====================================
+MISSION VISION SECTION
+===================================== */
+
+.mission-vision-section {
+    background: var(--white);
+}
+
+/* Responsive */
+
+@media (max-width:768px) {
+
+    .mission-vision-section {
+        padding: 60px 0;
+    }
+
+}
+
+
+
+/* =====================================
+VALUES SECTION
+===================================== */
+
+.values-section {
+    background: var(--bg-color);
+}
+
+.values-section h2 {
+    font-weight: 700;
+}
+
+.values-section p {
+    color: var(--text-muted);
+}
+
+/* value item */
+
+.value-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    border-left: 3px solid transparent;
+    transition: var(--transition-fast);
+}
+
+/* icon badge */
+
+.value-item i {
+    font-size: 22px;
+    min-width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-blue-soft);
+    border-radius: var(--radius-md);
+    margin-right: 15px;
+    transition: var(--transition-fast);
+}
+
+/* title */
+
+.value-item h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* text */
+
+.value-item p {
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
+/* hover effect */
+
+.value-item:hover {
+    background: var(--white);
+    border-left: 3px solid var(--accent-blue);
+    transform: translateX(6px);
+    box-shadow: var(--shadow-md);
+}
+
+.value-item:hover i {
+    background: var(--accent-blue);
+    color: var(--white);
+}
+
+.value-item:hover i::before {
+    color: var(--white);
+}
+
+
+
+/* VALUES RESPONSIVE */
+
+@media (max-width:768px) {
+
+    .value-item {
+        margin-bottom: 15px;
+        padding: 18px;
+    }
+
+}
+
+
+
+/* =====================================
+TEAM SECTION
+===================================== */
+
+.team-section {
+    background: var(--white);
+}
+
+.team-section h2 {
+    font-weight: 700;
+}
+
+.team-section p {
+    color: var(--text-muted);
+}
+
+
+
+/* =====================================
+TEAM CARD
+===================================== */
+
+.team-card {
+    background: var(--white);
+    border: 1px solid var(--border-light);
+    padding: 30px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-normal);
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+
+
+/* =====================================
+TEAM IMAGE
+===================================== */
+
+.team-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    transition: transform .4s ease;
+}
+
+.team-card:hover img {
+    transform: scale(1.08);
+}
+
+
+
+/* =====================================
+TEAM TEXT
+===================================== */
+
+.team-card h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+
+
+/* =====================================
+TEAM SOCIAL ICONS
+===================================== */
+
+.team-social {
+    margin-top: 10px;
+    opacity: 0;
+    transition: var(--transition-fast);
+}
+
+.team-social i {
+    font-size: 16px;
+    margin: 0 6px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.team-social i:hover {
+    color: var(--accent-blue);
+}
+
+.team-card:hover .team-social {
+    opacity: 1;
+}
+
+
+
+/* =====================================
+BOTTOM ACCENT ANIMATION
+===================================== */
+
+.team-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: var(--accent-blue);
+    transition: .4s;
+}
+
+.team-card:hover::after {
+    width: 100%;
+}
+
+
+
+/* =====================================
+TEAM SECTION RESPONSIVE
+===================================== */
+
+@media (max-width:768px) {
+
+    .team-card {
+        padding: 25px 20px;
+    }
+
+    .team-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+
+
+/* =====================================
+TIMELINE SECTION
+===================================== */
+
+.timeline-section {
+    background: var(--bg-color);
+}
+
+.timeline-section h2 {
+    font-weight: 700;
+}
+
+.timeline-section p {
+    color: var(--text-muted);
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* center line */
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background: var(--accent-blue);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+/* item */
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+}
+
+/* marker */
+
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: -9px;
+    top: 30px;
+    background: var(--white);
+    border: 3px solid var(--accent-blue);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* left */
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+/* right */
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+/* marker right */
+
+.timeline-item:nth-child(even)::after {
+    left: -9px;
+}
+
+.timeline-content {
+    padding: 20px;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-fast);
+}
+
+.timeline-content:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-content h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.timeline-content p {
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
+
+
+/* =====================================
+STATS SECTION
+===================================== */
+
+.stats-section {
+    background: var(--white);
+}
+
+.stats-section h3 {
+    font-weight: 700;
+    color: var(--accent-blue);
+}
+
+.stats-section p {
+    margin-top: 5px;
+    color: var(--text-muted);
+}
+
+
+
+/* =====================================
+WHY SECTION
+===================================== */
+
+.why-section {
+    background: var(--bg-color);
+}
+
+.why-section h2 {
+    font-weight: 700;
+}
+
+.why-section p {
+    color: var(--text-muted);
+}
+
+
+
+/* =====================================
+WHY FEATURE
+===================================== */
+
+.why-feature {
+    position: relative;
+    text-align: center;
+    padding: 30px 20px;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-light);
+    transition: var(--transition-normal);
+}
+
+/* hover */
+
+.why-feature:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+}
+
+
+
+/* =====================================
+ICON STYLE
+===================================== */
+
+.why-icon {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-blue-soft);
+    border-radius: 50%;
+    transition: var(--transition-fast);
+}
+
+.why-icon i {
+    font-size: 26px;
+    color: var(--accent-blue);
+}
+
+/* hover icon */
+
+.why-feature:hover .why-icon {
+    background: var(--accent-blue);
+}
+
+.why-feature:hover .why-icon i {
+    color: var(--white);
+}
+
+
+
+/* =====================================
+TEXT
+===================================== */
+
+.why-feature h5 {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.why-feature p {
+    color: var(--text-muted);
+}
+
+
+
+/* =====================================
+RESPONSIVE
+===================================== */
+
+@media (max-width:768px) {
+
+    .why-feature {
+        padding: 25px 20px;
+    }
+
+}

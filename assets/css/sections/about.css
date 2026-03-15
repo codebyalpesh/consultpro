@@ -1,0 +1,88 @@
+/* =================================
+ABOUT SECTION
+================================= */
+
+.about-section {
+    background: var(--white);
+    padding: 100px 0;
+}
+
+.section-tag {
+    display: block;
+    font-size: 14px;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.about-section h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+/* Feature Points */
+
+.about-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.about-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.about-features i {
+    color: var(--success-color);
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Button */
+
+.about-section .btn {
+    margin-top: 10px;
+}
+
+/* Image */
+
+.about-section img {
+    border-radius: var(--radius-md);
+}
+
+/* Experience Badge */
+
+.experience-badge {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    background: var(--white);
+    padding: 18px 24px;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+}
+
+.experience-badge h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.experience-badge p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--text-light);
+}

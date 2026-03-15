@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ===== META ===== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights | ConsultPro</title>
+  <meta name="description"
+    content="Stay updated with the latest business insights, market trends, and expert advice from ConsultPro.">
+
+  <!-- ===== FAVICON ===== -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-section">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">ConsultPro</a>
+
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="insights.html">Insights</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <a href="get-consultation.html" class="btn btn-warning ms-3">Get Consultation</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-section text-center reveal">
+    <div class="container">
+      <h1>Business Insights</h1>
+      <p>Expert articles, market trends, and strategic insights to help businesses make better decisions.</p>
+    </div>
+  </section>
+
+  <!-- INSIGHTS STATS -->
+  <section class="insights-stats py-5 text-center reveal">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 stat-item">
+
+          <h3 class="counter" data-target="500">
+            0
+          </h3>
+
+          <p>
+            Articles Published
+          </p>
+
+        </div>
+
+
+        <div class="col-md-4 stat-item">
+
+          <h3 class="counter" data-target="120000">
+            0
+          </h3>
+
+          <p>
+            Monthly Readers
+          </p>
+
+        </div>
+
+
+        <div class="col-md-4 stat-item">
+
+          <h3 class="counter" data-target="50">
+            0
+          </h3>
+
+          <p>
+            Industry Experts
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FEATURED ARTICLE -->
+  <section class="featured-article py-5 reveal">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-lg-6">
+          <img src="assets/images/blog-featured.jpg" alt="Featured Article" class="img-fluid rounded shadow">
+        </div>
+
+        <div class="col-lg-6">
+          <h2>How Strategic Planning Drives Business Growth</h2>
+          <p>
+            Strategic planning helps organizations identify opportunities,
+            manage risks and achieve long-term success.
+          </p>
+          <a href="#" class="btn btn-outline-primary">Read Article</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRENDING INSIGHTS -->
+  <section class="trending-insights py-5 reveal">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <h2>Trending Insights</h2>
+        <p>Most popular business articles this week.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="trending-card p-4 shadow-sm rounded">
+            <span class="trend-number">01</span>
+            <h6>How Businesses Adapt to Market Changes</h6>
+            <p>Strategies companies use to stay competitive in evolving markets.</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="trending-card p-4 shadow-sm rounded">
+            <span class="trend-number">02</span>
+            <h6>Top Startup Funding Strategies</h6>
+            <p>Practical methods to secure funding for growing startups.</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="trending-card p-4 shadow-sm rounded">
+            <span class="trend-number">03</span>
+            <h6>Building a Scalable Business Model</h6>
+            <p>Key frameworks to design a business ready for growth.</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG CARDS -->
+  <section class="blog py-5 reveal">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Blog 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="blog-card shadow rounded">
+
+            <!-- Image + Category -->
+            <div class="blog-img">
+              <img src="assets/images/blog/blog1.jpg" class="img-fluid">
+              <span class="blog-category">Marketing</span>
+            </div>
+
+            <!-- Content -->
+            <div class="blog-content p-3">
+
+              <!-- Meta -->
+              <div class="blog-meta">
+                <span><i class="fa-regular fa-calendar"></i> Mar 2026</span>
+                <span><i class="fa-regular fa-user"></i> Admin</span>
+              </div>
+
+              <h5>Market Trends Every Business Should Know</h5>
+              <p>Understanding market trends helps businesses stay competitive.</p>
+              <a href="#" class="read-more">Read More</a>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="blog-card shadow rounded">
+
+            <div class="blog-img">
+              <img src="assets/images/blog/blog2.jpg" class="img-fluid">
+              <span class="blog-category">Finance</span>
+            </div>
+
+            <div class="blog-content p-3">
+
+              <div class="blog-meta">
+                <span><i class="fa-regular fa-calendar"></i> Mar 2026</span>
+                <span><i class="fa-regular fa-user"></i> Admin</span>
+              </div>
+
+              <h5>Financial Planning for Sustainable Growth</h5>
+              <p>Smart financial planning ensures stability.</p>
+              <a href="#" class="read-more">Read More</a>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Blog 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="blog-card shadow rounded">
+
+            <div class="blog-img">
+              <img src="assets/images/blog/blog3.jpg" class="img-fluid">
+              <span class="blog-category">Startup</span>
+            </div>
+
+            <div class="blog-content p-3">
+
+              <div class="blog-meta">
+                <span><i class="fa-regular fa-calendar"></i> Mar 2026</span>
+                <span><i class="fa-regular fa-user"></i> Admin</span>
+              </div>
+
+              <h5>Startup Strategies for Rapid Success</h5>
+              <p>Innovative strategies help startups succeed faster.</p>
+              <a href="#" class="read-more">Read More</a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORE TOPICS -->
+  <section class="insight-topics py-5 reveal">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <h2>Explore Topics</h2>
+        <p>Browse insights by category.</p>
+      </div>
+
+      <div class="row g-4 text-center">
+
+        <div class="col-md-3">
+          <div class="topic-card p-4 shadow-sm rounded">
+            <i class="fa-solid fa-chart-line fa-2x mb-3"></i>
+            <h6>Strategy</h6>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="topic-card p-4 shadow-sm rounded">
+            <i class="fa-solid fa-coins fa-2x mb-3"></i>
+            <h6>Finance</h6>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="topic-card p-4 shadow-sm rounded">
+            <i class="fa-solid fa-rocket fa-2x mb-3"></i>
+            <h6>Startups</h6>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="topic-card p-4 shadow-sm rounded">
+            <i class="fa-solid fa-chart-pie fa-2x mb-3"></i>
+            <h6>Market Trends</h6>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER CTA -->
+  <section class="newsletter-cta py-5 text-center reveal">
+    <div class="container">
+      <h2>Get Weekly Business Insights</h2>
+      <p>Join thousands of professionals receiving our latest articles.</p>
+
+      <!-- Changed class name -->
+      <form class="newsletter-main-form justify-content-center">
+        <input type="email" placeholder="Enter your email">
+        <button class="btn btn-warning">Subscribe</button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section py-5 text-center reveal">
+    <div class="container">
+      <h2>Need Expert Business Advice?</h2>
+      <p>Our consultants are ready to guide your business toward smarter growth and better decisions.</p>
+      <a href="get-consultation.html" class="btn btn-warning">Get Consultation</a>
+    </div>
+  </section>
+
+  <!-- ================================= -->
+  <!-- PREMIUM FOOTER -->
+  <!-- ================================= -->
+
+  <footer class="footer-section py-5 reveal">
+
+    <div class="container">
+
+      <div class="row g-4 g-md-5">
+
+        <!-- COMPANY INFO -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">ConsultPro</h5>
+          <p class="footer-text">
+            Professional consulting services helping businesses grow
+            through strategy, market insights, and innovation.
+          </p>
+
+          <!-- Social Icons -->
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- SERVICES LINKS -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Services</h5>
+          <div class="footer-links">
+            <a href="business-strategy.html">Business Strategy</a>
+            <a href="market-analysis.html">Market Analysis</a>
+            <a href="financial-planning.html">Financial Planning</a>
+            <a href="startup-consulting.html">Startup Consulting</a>
+          </div>
+        </div>
+
+        <!-- COMPANY LINKS -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Company</h5>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="insights.html">Insights</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Newsletter</h5>
+          <p class="footer-text">
+            Subscribe to receive business insights and updates.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- FOOTER BOTTOM -->
+      <div class="footer-bottom text-center">
+        <p>© 2026 ConsultPro. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+
+  <button id="scrollTopBtn">
+
+    <svg width="48" height="48">
+
+      <circle cx="24" cy="24" r="20" stroke-width="3" fill="none" class="progress-circle" />
+
+    </svg>
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+  </button>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/911234567890" target="_blank" class="whatsapp-float">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

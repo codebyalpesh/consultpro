@@ -1,0 +1,92 @@
+/* =================================
+FAQ WRAPPER
+================================= */
+
+.faq-wrapper {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* =================================
+FAQ ITEM
+================================= */
+
+.faq-item {
+    border-bottom: 1px solid var(--border-soft);
+}
+
+
+/* =================================
+QUESTION
+================================= */
+
+.faq-question {
+
+    width: 100%;
+
+    background: none;
+    border: none;
+
+    text-align: left;
+
+    padding: 20px 0;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    color: var(--secondary-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+
+/* =================================
+ICON
+================================= */
+
+.faq-icon i {
+
+    color: var(--primary-color);
+    transition: transform var(--transition-fast);
+
+}
+
+
+/* =================================
+ANSWER
+================================= */
+
+.faq-answer {
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.4s ease;
+
+}
+
+.faq-answer p {
+
+    color: var(--text-color);
+    padding-bottom: 15px;
+    font-size: 14px;
+
+}
+
+
+/* =================================
+ACTIVE STATE
+================================= */
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+}
+
+.faq-item.active .faq-icon i {
+    transform: rotate(45deg);
+}
