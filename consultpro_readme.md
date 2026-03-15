@@ -107,7 +107,7 @@ Edit CSS variables in your global stylesheet:
 
 ## 🌐 Live Demo
 
-https://codebyalpesh.github.io/consultpro-corporate-template/
+https://codebyalpesh.github.io/consultpro/
 
 ------------------------------------------------------------------------
 
@@ -115,7 +115,7 @@ https://codebyalpesh.github.io/consultpro-corporate-template/
 
 Clone the repository:
 
-git clone https://github.com/codebyalpesh/consultpro-corporate-template.git
+git clone https://github.com/codebyalpesh/consultpro.git
 
 Open index.html in your browser.
 
